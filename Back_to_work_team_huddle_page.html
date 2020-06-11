@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Leading team huddles</title>
+  <script type="text/javascript"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<style>
+
+body {
+  background-image: url('https://i.ibb.co/y8Cmqst/roadmap-faded.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+span {
+  justify-content: space-between;
+}
+.header_bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header_text {
+  background-color: #D3D0C9;
+  color:#2A295C;
+  text-align: center;
+  padding: 1px 10px;
+  font-size: 18pt;
+  font-weight: bold;
+  border-style: groove;
+  border-color: #D3D0C9;
+  border-width: thick;
+  border-radius: 40px;
+}
+
+.content_icon {
+  width: 200px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.Nav_Button a:link, a:visited {
+  background-color: #2A295C;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width: 50px;
+  height: auto;
+  border-radius: 25px;
+  vertical-align: top;
+  font-family: Sansa Pro Black, Arial, sans-serif;
+  font-size: 14pt;
+}
+
+.footer_bar {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  margin-right: 30px;
+}
+
+.DPSBox {
+  align-self: flex-end;
+}
+
+.bottom_of_the_page {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.accordion_element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text_block {
+  width:100%;
+  height: auto;
+}
+
+.link_block  {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.linkButton a:link, a:visited {
+  background-color: #D3D0C9;
+  color: #2A295C;
+  padding: 5px 10px;
+  margin-left: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width: 50px;
+  height: auto;
+  border-radius: 25px;
+  vertical-align: top;
+  font-family: Arial, sans-serif;
+  font-size: 14pt;
+}
+
+.linkButton:hover a:link, a:visited {
+  background-color: #2A295C;
+  color: #D3D0C9;
+}
+
+.intro_text{
+  font-size: 14pt;
+  padding: 1px 40px;
+  border: 2px solid #D3D0C9;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background-color: #D3D0C966;
+}
+
+#accordion .ui-accordion-header {
+  background-color: #D3D0C9;
+  color:#2A295C;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-style: groove;
+  font-size: 14pt;
+}
+
+#accordion .ui-accordion-content {
+  height: auto;
+  font-size: 14pt;
+}
+
+#accordion .ui-accordion-header-active {
+  background-color: #2A295C;
+  color: #FFFFFF;
+  margin-bottom:1px;
+  border-style: none;
+}
+
+#accordion .ui-accordion-content-active {
+  margin-bottom: 10px;
+}
+
+</style>
+
+<body>
+  <div class="header_bar">
+    <div class="header_text">
+      <h1>Having Conversations</h1>
+    </div>
+  </div>
+  <div class="intro_text">
+    <p>
+      Your people are returning to work and it’s entirely natural that they may feel apprehensive about this. They may also be hungry for information about what the new normal looks like on your site and for them specifically.<br />
+      One really effective way of allowing your people to share how they are feeling and to provide them with specific guidance and support to help them get back to work is by setting up some team huddles. <br />
+      The steps below will help you lead your team through effective team huddles.
+    </p>
+  </div>
+  <div class="main_area" id="accordion">
+    <h3>1. Looking after yourself</h3>
+    <div class="accordion_element">
+      <div class="text_block">
+      <p>
+        Before you can effectively support your team with their concerns, you need to take care of yourself and your own concerns.<br />
+        Use the buttons to access some of our range of resources to help you with mental health and wellbeing, as well as the importance of positivity.
+      </p>
+    </div>
+    <div class="link_block">
+      <span class="linkButton">
+      <a href="#" onclick="this.href=positiveModule" alt="link to a micro learning module on positivity which opens in a new window" target="_blank">
+        Being Positive
+      </a>
+    </span>
+    <span class="linkButton">
+      <a href="https://#" onclick="this.href=happyModule" alt="Link to a micro learning module on happiness which opens in a new window" target="_blank">
+        Happiness
+      </a>
+      </span>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=worriesModule" alt="Link to a micro learning module on Worries and overcoming them which opens in a new window" target="_blank">
+        Worries
+      </a>
+      </span>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=wellbeingHub" alt="Link to the Sodexo UK & I Wellbeing hub which opens in a new window" target="_blank">
+        Wellbeing Hub
+      </a>
+      </span>
+    </div>
+  </div>
+    <h3>2. Leading a team huddle?</h3>
+    <div class="accordion_element">
+      <div class="text_block">
+      <p>
+        Remember a team huddle is a daily or weekly meeting that is short, focused and interactive. <br />
+        Use the first button to read a manager’s guide on how to design a successful Team Huddle. <br />
+        The second button takes you to a micro learning module on how to communicate effectively.<br />
+        The third to the SodexoNet page where you can find a range of Safety Moments to use.
+      </p>
+    </div>
+    <div class="link_block">
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=SNHuddlesURL" alt="Link to the Sodexo guide to effective team huddles which opens in a new window" target="_blank">
+        Guide to team huddles
+      </a>
+      </span>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=commsModule" alt="Link to a micor learning module on effective communication which opens in a new window" target="_blank">
+        Communicating effectively
+      </a>
+      </span>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=safetyMoments" alt="Link to the SodexoNet page on Safety Moments which opens in a new window" target="_blank">
+        Safety Moments
+      </a>
+      </span>
+    </div>
+  </div>
+    <h3>3. The importance of motivation</h3>
+    <div class="accordion_element">
+      <div class="text_block">
+      <p>
+        What is motivation? Where does it come from? One thing’s for sure – if we lack motivation in ourselves or in our teams our performance, business results and our state of mind will be impacted.<br />Here are some short learning modules to help with understanding what motivation is and how to harness it’s power!
+      </p>
+    </div>
+    <div class="link_block">
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=motivationModule" alt="Link to a micro learning module on the importance of motivation which opens in a new window" target="_blank">
+        The importance of motivation
+      </a>
+      </span>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=positiveModule" alt="Link to t a micro learning module on positivity which opens in a new window" target="_blank">
+        Being positive
+      </a>
+      </span>
+    </div>
+  </div>
+    <h3>4. Leading by example</h3>
+    <div class="accordion_element">
+      <div class="text_block">
+      <p>
+         Leading by example is a powerful tool. How you carry yourself as a leader, your actions and words have a massive impact on how your people respond to the day to day challenges we all face. Try these modules for some great hints and tips.
+      </p>
+    </div>
+    <div class="link_block">
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=leadbyexample" alt="Link to a micro learning module on leading by example which opens in a new window" target="_blank">
+        Leading by Example
+      </a>
+      </span>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=authenticLeader" alt="Link to learning module on authentic leadership that opens in a new window" target="_blank">
+        Being an authentic leader
+      </a>
+      </span>
+    </div>
+  </div>
+    <h3>5. Coping with Change</h3>
+    <div class="accordion_element">
+      <div class="text_block">
+      <p>
+        It’s completely normal and healthy for us all to be affected by change, and it’s fair to say that the world has changed significantly in the last few months.
+        <br />
+        Why not take a few moments to look at the following short learning burst relating to change. So take a quiet moment to work out how you are feeling about the change all around us first – where is your head at – before applying this insight with your team.
+      </p>
+    </div>
+    <div class="link_block">
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=changeModule" alt="Link to learning module on change management awareness that opens in a new window" target="_blank">
+        Change
+      </a>
+      </span>
+      <span class="linkButton">
+      <a href="https://#" onclick="this.href=pscyhChange" alt="Link to a video on the psychology of change which opens in a new window" target="_blank">
+        The Psychology of change
+      </a>
+      </span>
+    </div>
+  </div>
+
+  </div>
+  <div class="bottom_of_the_page">
+    <div class="footer_bar">
+      <div class="DPSBox" title="Read the Sodexo Ingenium Data Privacy Statement">
+        <p class="Nav_Button">
+          <a href="https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253d48" alt="Link to the Sodexo Ingenium Data Policy Statement which opens in a new window" target="_blank">Data Privacy Statement</a>
+        </P>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+
+$(document).ready(function() {
+
+  $( '#accordion' ).accordion({
+    active: false,
+    collapsible: true
+  });
+
+})
+
+var SNHuddlesURL = "https://uk.sodexonet.com/files/live/sites/sdxnet-uk/files/SodexoNet_UK/2_News/Internal_Communications/Team_Huddles/Team%20huddle%20managers%20guide.pdf";
+
+var commsModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253d344ecf83-0937-4570-bc6d-a94e8c02fb51";
+
+var happyModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253d8a07db26-67fe-4936-a091-1c9365128252";
+
+var positiveModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253d15c441c2-d388-453b-9e6c-d686d1d9ab5b";
+
+var leadbyexample = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253d15c441c2-d388-453b-9e6c-d686d1d9ab5b";
+
+var worriesModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253d99aa3af6-3efe-43a1-b5cc-f5cdcd16f5ce";
+
+var mentalHModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253d6f9d7699-3933-4ab9-bb7a-36ad867b9d01";
+
+var wellbeingHub = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253d152";
+
+var motivationModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253db2ece062-add3-46a8-9336-de4a74cef40a";
+
+var changeModule = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253de316742b-0918-446d-90a0-49fb22953ced";
+
+var authenticLeader = "https://sodexo.csod.com/samldefault.aspx?ouid=2&returnurl=%252fDeepLink%252fProcessRedirect.aspx%253fmodule%253dloRegisterAndLaunch%2526lo%253dd0b62401-dd04-4eee-a805-6f97aebadc13";
+
+var safetyMoments = "https://uk.sodexonet.com/home/tools-x0026-resources/service-operations/hseq/safety-moments.html";
+
+var pscyhChange = "https://play.buto.tv/MBFfQ"
+
+</script>
+
+<!--Code written and published by Jon Moon, reserving the rights to be identified as the author of this code-->
+</html>
